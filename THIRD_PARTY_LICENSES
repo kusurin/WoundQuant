@@ -1,0 +1,14 @@
+# Third-party attribution
+
+## RulerNet
+
+- Source: https://github.com/ymp5078/RulerNet
+- Weights: https://huggingface.co/ymp5078/RulerNet
+- License: Creative Commons Attribution-NonCommercial 4.0 International, https://creativecommons.org/licenses/by-nc/4.0/
+- Upstream license: https://github.com/ymp5078/RulerNet/blob/main/LICENSE
+- Attribution: RulerNet authors / ymp5078; “RulerNet: Learning Perspective-Invariant Ruler Representations for Robust Image Scale Estimation.”
+- `src/woundquant/ruler.py` adapts geometric-progression postprocessing, adding validation, a reusable ONNX session and original-resolution coordinates. Its adapted portion is CC BY-NC 4.0, not relicensed under the repository's MIT license.
+- Upstream weights are external artifacts and are not included in the Git-tracked source or wheel. Their terms remain those of the upstream release.
+
+Other libraries are installed as dependencies and retain their own licenses. The repository's `LICENSE` does not relicense research data or third-party assets.
+

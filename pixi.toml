@@ -1,0 +1,17 @@
+[workspace]
+name = "woundquant"
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64"]
+
+[dependencies]
+python = "3.11.*"
+pip = "*"
+
+[pypi-dependencies]
+woundquant = { path = ".", editable = true, extras = ["exp"] }
+torch = { version = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" }
+torchvision = { version = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" }
+
+[tasks]
+app = "woundquant serve --checkpoint weights/woundquant.pt --ruler-model weights/rulernet.onnx"
+table1 = "python exp/table1_comparison/run.py all"

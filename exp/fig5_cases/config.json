@@ -1,0 +1,22 @@
+{
+  "output_dir": "results/fig5_cases",
+  "data": {
+    "annotations": "dataset/generalHospital/label/annotations.json",
+    "images": "dataset/generalHospital",
+    "exclusive": "dataset/exclusive",
+    "icc": "dataset/icc",
+    "ruler": "dataset/ruler.csv",
+    "split": "dataset/splits.json"
+  },
+  "seed": 42,
+  "bootstrap": 5000,
+  "dependencies": {
+    "fig4_performance": "exp/fig4_performance/config.json"
+  },
+  "percentiles": [
+    10,
+    35,
+    65,
+    90
+  ]
+}
